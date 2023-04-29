@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.interface-wrapper{
+    margin: auto;
+    position: relative;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+
+    background-color: rgba(9, 10, 15, 0.8);
+    border-radius: 10px;
+    margin-top: 80px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+
+}
+
+
+.login-wrapper{
+
+    position: relative;
+    margin: auto;
+
+
+    background-color: rgba(113 119 144 / 38%);
+
+    width: 35%;
+    height: 80%;
+
+    border-radius: 10px;
+
+
+}
+
+
+
+.login-prompt{
+    margin: auto;
+    width: fit-content;
+    height: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title{
+
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    padding-right: 5px;
+    padding-left: 5px;
+
+
+    font-family: "Poppins", sans-serif;
+
+
+    border-radius: 3px;
+
+    color:white;
+    font-weight: 500;
+    font-size: 25;
+
+
+}
+
+
+.date-input{
+
+    border-radius: 4px;
+
+    width: 100%;
+    height: fit-content;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+
+    position: relative;
+    margin: auto;
+
+    border: none;
+    padding: 15px;
+
+    background-color: rgba(191, 192, 196, 0.38);
+
+}
+
+
+.user-input{
+
+    border-radius: 4px;
+
+    width: 100%;
+    height: 20px;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+
+    position: relative;
+    margin: auto;
+
+    border: none;
+    padding: 15px;
+
+    background-color: rgba(191, 192, 196, 0.38);
+
+}
+
+.user-input,.date-input{
+    margin-bottom: -10px !important;
+}
+
+
+.user-input input::placeholder, .date-input input::placeholder{
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+
+}
+
+.user-input::-webkit-input-placeholder,.date-input::-webkit-input-placeholder{
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+
+.user-input:focus,.date-input:focus{
+    outline: none;
+    border: none;
+
+}
+
+.login-submit{
+    position: relative;
+    display: block;
+    margin: auto !important;
+    margin-bottom: -30px !important;
+    width: 40px;
+    height: 40px;
+
+    
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABtUlEQVRIie3Wz0pVURgF8F/NoppISSkalWCjXqEHiCZhSfoEpf2RepdUCCKIolRI6gVyEJQjlWpkA8up1qjS62mw9+2ocD1733uTBi44s/Wtdb7v7P2dxQH2CYcyuD0YwiVcRAe2sIIveINX+Nqul+vFE9RQVDwbmERXq6aDWI+iP/EU13AGR3AU/biB5/gVuT9wpVnTO8IoC7wUOq/COUzFmhpGc00HomkNt3OLcR+bsT65825hVAXuNmG63bzAd5xOKXgUC6ZbMK1jOmpNpJAfYlW4Po3wFvPorNA6Lxy4DWGSLeO90MligvmLyL3VDuPOaJpiPhx5r9thDCexEEU/aXyA+iPn815ic6q3U6NnvoHmceVS+YvDe/b0nyJ11Bci52M7TLcfriX7eLg+yL9ON6tEUxbIO2kLpE/GAqmvzJkqYgJmotZ4CrlLWOwFxlowfRA11nEqteiq8Fvcwr0mTeu/xcu5xaPKIDAlpI4q9CnHW8NIrmkdA1hTRp9nuI6zQvQ5JtzTYSGl/FaON7vT3ejBY2F0KWFvXMI3zYm33XbG2xPCOFewLMTbWXzL0DzAv8cfmpSYf1HwigkAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    border-radius: 5px;
+    border:none;
+    outline: none;
+
+    background-color: rgba(214, 214, 214, 0.58);
+
+}
+
+.login-submit:hover{
+ 
+    cursor: pointer;
+}
+
+
+.login-submit:focus{
+ 
+    background-color: rgba(133, 132, 132, 0.78);
+}
+
+.Register,.Reset{
+
+    height: 40px;
+
+    border-radius: 5px;
+    border:none;
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+
+    background-color: rgba(214, 214, 214, 0.58);
+}
+
+
+
+.Register:hover ,.Reset:hover{
+
+    cursor: pointer;
+
+}
+
+.Register:active,.Reset:active{
+
+    background-color: rgba(133, 132, 132, 0.78);
+}
+
+.form-div{
+
+    margin: auto;
+    position: relative;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+}

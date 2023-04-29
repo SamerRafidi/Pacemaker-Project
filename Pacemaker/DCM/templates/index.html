@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/Background.css">
+    <link rel="stylesheet" href="../static/styles/Interface_styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="block">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!--this is the big gray box every thing goes inside of on the 
+    main page-->
+    <div class="interface-wrapper">
+        
+
+        
+        <!--the smaller box that contains the log in prompt-->
+        <div class="login-wrapper">
+
+
+            <div class="login-prompt">
+
+                <!-- Call ExistingUser() here -->
+                <form autocomplete="off" action="/ExistingUser" method="POST">
+                    <p class="login-title">Login</p>
+                    <p><input required class="Username-input" type = "text" name = "username" placeholder="Username"/></p>
+                    <p><input required  class="Password-input" type = "password" name = "password" placeholder="Password"/></p>
+                    <p>
+                        {% if errormsg == "wrong" %} <p class="err-msg"> Wrong username or password, try again 
+                        </p> 
+                        {% else %} <p> &nbsp 
+                        </p>      
+
+                        {% endif %}
+                        <input class="login-submit" type = "submit" value = ""></input>
+                    </p>
+
+                </form>
+
+                <form autocomplete="off" action="/Register" method="POST">
+                   
+                    <p>
+                        <input class="Register" type = "submit" value = "Register"></input>
+                    </p>
+
+                </form>
+     
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>

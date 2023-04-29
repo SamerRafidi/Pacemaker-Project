@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/Background.css">
+    <link rel="stylesheet" href="../static/styles/Interface_styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="block">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+
+   
+
+    <!--this is the big gray box every thing goes inside of on the 
+    main page-->
+    <div class="interface-box">
+      <div class="interface-nav">
+        <form class="logout-form" autocomplete="off" action="/logout" method="POST">
+
+          <span class="user-indicator">User: {{ user }}</span>
+
+          <span class="logout">
+              <input class="index" type = "submit" value = "Log out"></input> 
+          </span>
+
+          <a href=""></a>
+
+        </form>
+      </div>
+
+
+
+
+
+
+
+      <div class="flex-wrapper">
+
+        
+        <div class="pacemaker-mode-wrapper">
+            <div class="pacemaker-setting-wrapper">
+              <p class="pacemaker-settings-title">Pacing Modes:</p>
+  
+              <a href="/redirectAOO">
+                  <p class="pacemaker-setting-p">AOO</p>
+              </a>
+  
+              <a href="/redirectVOO">
+                  <p class="pacemaker-setting-p">VOO</p>
+              </a>
+  
+              <a href="/redirectVVI">
+                  <p class="pacemaker-setting-p">VVI</p>
+              </a>
+  
+              <a href="/redirectAAI">
+                  <p class="pacemaker-setting-p">AAI</p>
+              </a>
+
+              <a href="/redirectAOOR">
+                <p class="pacemaker-setting-p">AOOR</p>
+              </a>
+
+              <a href="/redirectVOOR">
+                  <p class="pacemaker-setting-p">VOOR</p>
+              </a>
+
+
+
+            </div>
+          </div>
+
+
+
+        <div class="pacemaker-curr-wrapper">
+          <form autocomplete="off" action="/saveVOOR" method="POST" >
+
+          <div class="pacemaker-setting-wrapper">
+              <!--forms-->
+              <div class="current-mode-div">
+                <p class="current-mode">Programming Mode: VOOR</p>
+              </div>
+
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Upper Rate Limit (ppm):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="50" max="175" step="5" name = "upper_rate" placeholder={{box0}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Lower Rate Limit (ppm):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="50" max="175" step="5" name = "low_rate" placeholder={{box1}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Maximum Sensor Rate (ppm):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="0" max="175" step="5" name = "maximumSensorRate" placeholder={{box2}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Ventricular Amplitude (V):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="0" max="5.0" step="1.25" name = "amplitude" placeholder={{box3}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Ventricular Pulse Width (ms):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="0.1" max="1.9" step="0.1" name = "pulse_width" placeholder={{box5}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Ventricular Threshold:</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="0.1" max="1.9" step="0.1" name = "activity_threshold" placeholder={{box5}}>
+              </div>
+
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Reaction Time (s):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="10" max="50" step="10" name = "reaction_time" placeholder={{box5}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Response Factor:</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="1" max="16" step="1" name = "response_factor" placeholder={{box6}}>
+              </div>
+
+              <div class="pacemaker-input-prompt">
+                <p class="pacemaker-input-prompt">Recovory Time (min):</p> 
+                <input class="user-input pacemaker-input" autocomplete="off" type = "number" min="2" max="16" step="1" name = "recovery_time" placeholder={{box7}}>
+              </div>
+
+          </div>
+
+
+  
+            <div class="refresh-pacemaker-params">
+              <input class="index form-button"  type = "submit" value = "Save Inputs"></input>
+            </div>
+          </form>
+
+
+        </div>
+
+
+
+
+
+
+
+        
+        <div class="pacemaker-curr-wrapper">
+          <div class="pacemaker-setting-wrapper">
+            <p class="pacemaker-settings-title">Pacemaker Status</p>
+            <p class="pacemaker-setting">ComPort: {{comPort}}</p>
+            <p class="pacemaker-setting">Serial Number: {{serialNumber}} </p>
+            <p class="pacemaker-setting">Connection Status: {{connectionStatus}}</p>
+          </div>
+
+
+
+        </div>
+        
+      </div>
+
+
+      <div class="terminal">
+        Terminal:
+        <p>
+          {{terminal}}
+        </p>
+      </div>
+
+
+
+
+      <div class="pacemaker-action-buttons" >
+
+        <div class="pacemaker-action-buttons-wrapper">
+          <form autocomplete="off" action="/run" method="POST"  style="margin-right: 10px; ;">
+            <input class="index form-button"   type = "submit" value = "Load & run"></input>
+          </form>
+
+          <form autocomplete="off" action="/connect" method="POST">
+                   
+            <input class="index form-button" type = "submit" value = "Connect"></input> <!-- ******IF YOU CONNECT, CHANGE THE BUTTON TO DISCONNECT******* -->
+
+            <div>
+              {% if connect == 'true' %} <p class="connection-status"> Connected </p> <!-- Make Green -->
+              {% elif connect == 'false' %} <p class="connection-status"> Not Connected </p> <!-- Make Red -->
+              {% endif %}
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+        
+        <!--the smaller box that contains the log in prompt-->
+
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>

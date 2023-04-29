@@ -1,0 +1,100 @@
+{
+    "h": {
+        "username": "h",
+        "password": "e0ccaeadfef916630c35576679e4cd4b438e7fc95a60b7361705f708",
+        "firstName": "",
+        "lastName": "",
+        "email": "h@gmail.om",
+        "pacemakerSettings": {
+            "currentMode": "AAI",
+            "AOO": {
+                "upperRate": 110,
+                "lowerRate": 60,
+                "atrialPulseWidth": 1,
+                "atrialAmplitude": 3.75,
+                "pacingMode": "AOO"
+            },
+            "VOO": {
+                "upperRate": 75,
+                "lowerRate": 55,
+                "ventricularPulseWidth": 1,
+                "ventricularAmplitude": 2.5,
+                "pacingMode": "VOO"
+            },
+            "VVI": {
+                "upperRate": 70,
+                "lowerRate": 70,
+                "ventricularPulseWidth": 1,
+                "ventricularAmplitude": 2.5,
+                "ventricularSensitivity": 1.0,
+                "RP": 150.0,
+                "hysteresis": "off",
+                "rateSmoothing": 3.0
+            },
+            "AAI": {
+                "upperRate": 75,
+                "lowerRate": 55,
+                "atrialPulseWidth": 1,
+                "atrialAmplitude": 1.25,
+                "atrialSensitivity": 1.0,
+                "RP": 150.0,
+                "PVARP": 150.0,
+                "hysteresis": "on",
+                "rateSmoothing": 6.0
+            },
+            "AOOR": {
+                "upperRate": 0,
+                "lowerRate": 0,
+                "maximumSensorRate": 0,
+                "atrialAmplitude": 0,
+                "atrialPulseWidth": 0,
+                "activityThreshold": 0,
+                "reactionTime": 0,
+                "responseFactor": 0,
+                "recoveryTime": 0
+            },
+            "VOOR": {
+                "upperRate": 0,
+                "lowerRate": 0,
+                "maximumSensorRate": 0,
+                "ventricularAmplitude": 0,
+                "ventricularPulseWidth": 0,
+                "activityThreshold": 0,
+                "reactionTime": 0,
+                "responseFactor": 0,
+                "recoveryTime": 0
+            },
+            "AAIR": {
+                "upperRate": 0,
+                "lowerRate": 0,
+                "maximumSensorRate": 0,
+                "atrialAmplitude": 0,
+                "atrialPulseWidth": 0,
+                "atrialSensitivity": 0,
+                "RP": 0,
+                "PVARP": 0,
+                "hysteresis": 0,
+                "rateSmoothing": 0,
+                "activityThreshold": 0,
+                "reactionTime": 0,
+                "responseFactor": 0,
+                "recoveryTime": 0
+            },
+            "VVIR": {
+                "upperRate": 0,
+                "lowerRate": 0,
+                "maximumSensorRate": 0,
+                "ventricularAmplitude": 0,
+                "ventricularPulseWidth": 0,
+                "ventricularSensitivity": 0,
+                "RP": 0,
+                "hysteresis": 0,
+                "rateSmoothing": 0,
+                "activityThreshold": 0,
+                "reactionTime": 0,
+                "responseFactor": 0,
+                "recoveryTime": 0
+            }
+        }
+    }
+}

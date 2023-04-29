@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+.interface-wrapper{
+    margin: auto;
+    position: relative;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+
+    background-color: rgba(9, 10, 15, 0.8);
+    border-radius: 10px;
+    margin-top: 80px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.login-wrapper{
+
+    position: relative;
+    margin: auto;
+
+
+    background-color: rgba(113 119 144 / 38%);
+
+    width: 500px;
+    height: 400px;
+
+    border-radius: 10px;
+
+
+}
+
+
+
+.login-prompt{
+    margin: auto;
+    width: fit-content;
+    height: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pacemaker-data-prompt{
+    margin: auto;
+    width: fit-content;
+    height: 70%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title{
+
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    padding-right: 5px;
+    padding-left: 5px;
+
+
+    font-family: "Poppins", sans-serif;
+
+
+    border-radius: 3px;
+
+    color:white;
+    font-weight: 500;
+    font-size: 25;
+
+
+}
+
+
+
+
+
+.Username-input, .Password-input{
+
+    border-radius: 4px;
+
+    width: 100%;
+    height: 20px;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+
+    position: relative;
+    margin: auto;
+
+    border: none;
+    padding: 15px;
+
+    background-color: rgba(191, 192, 196, 0.38);
+
+}
+
+.Username-input{
+    margin-bottom: -10px !important;
+}
+
+
+.Username-input input::placeholder, .Password-input input::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+
+}
+
+.Username-input::-webkit-input-placeholder,.Password-input::-webkit-input-placeholder{
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+.Password-input:-moz-placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+
+
+
+.Username-input:focus, input:focus, .Password-input:focus, input:focus{
+    outline: none;
+    border: none;
+
+}
+
+.form-button{
+    position: relative;
+    display: block;
+    margin: auto !important;
+    margin-bottom: -30px !important;
+    width: fit-content;
+    height: 30px;
+
+
+
+    border-radius: 5px;
+    border:none;
+    outline: none;
+
+    background-color: rgba(221, 212, 212, 0.747);
+
+}
+
+.form-button:hover{
+ 
+    cursor: pointer;
+}
+
+
+.form-button:focus{
+ 
+    background-color: rgba(133, 132, 132, 0.78);
+}
+
+
+
+.login-submit{
+    position: relative;
+    display: block;
+    margin: auto !important;
+    margin-bottom: -30px !important;
+    width: 40px;
+    height: 40px;
+
+    
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABtUlEQVRIie3Wz0pVURgF8F/NoppISSkalWCjXqEHiCZhSfoEpf2RepdUCCKIolRI6gVyEJQjlWpkA8up1qjS62mw9+2ocD1733uTBi44s/Wtdb7v7P2dxQH2CYcyuD0YwiVcRAe2sIIveINX+Nqul+vFE9RQVDwbmERXq6aDWI+iP/EU13AGR3AU/biB5/gVuT9wpVnTO8IoC7wUOq/COUzFmhpGc00HomkNt3OLcR+bsT65825hVAXuNmG63bzAd5xOKXgUC6ZbMK1jOmpNpJAfYlW4Po3wFvPorNA6Lxy4DWGSLeO90MligvmLyL3VDuPOaJpiPhx5r9thDCexEEU/aXyA+iPn815ic6q3U6NnvoHmceVS+YvDe/b0nyJ11Bci52M7TLcfriX7eLg+yL9ON6tEUxbIO2kLpE/GAqmvzJkqYgJmotZ4CrlLWOwFxlowfRA11nEqteiq8Fvcwr0mTeu/xcu5xaPKIDAlpI4q9CnHW8NIrmkdA1hTRp9nuI6zQvQ5JtzTYSGl/FaON7vT3ejBY2F0KWFvXMI3zYm33XbG2xPCOFewLMTbWXzL0DzAv8cfmpSYf1HwigkAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+    border-radius: 5px;
+    border:none;
+    outline: none;
+
+    background-color: rgba(214, 214, 214, 0.58);
+
+}
+
+.login-submit:hover{
+ 
+    cursor: pointer;
+}
+
+
+.login-submit:focus{
+ 
+    background-color: rgba(133, 132, 132, 0.78);
+}
+
+.Register{
+
+    position: relative;
+    display: block;
+    margin: auto !important;
+    width: fit-content;
+    height: 40px;
+
+    border-radius: 5px;
+    border:none;
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+
+    background-color: rgba(214, 214, 214, 0.58);
+
+}
+
+.Register:hover{
+
+    cursor: pointer;
+
+}
+
+.Register:active{
+
+    background-color: rgba(133, 132, 132, 0.78);
+
+}
+
+.pacemaker-input{
+    border-radius: 4px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    height: 20px;
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+
+
+    border: none;
+    padding: 15px;
+
+    background-color: rgba(191, 192, 196, 0.38);
+
+}
+
+.pacemaker-input-prompt{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.pacemaker-input-wrapper{
+    position: relative;
+    margin:auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+.save-inputs{
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.connect-button{
+    position: relative;
+    margin: auto;
+    width: fit-content;
+}
+
+.connection-status{
+    color: white;
+}
+
+.run-button{
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.interface-nav{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border-bottom: 1px solid rgb(255 255 255 / 35%);
+
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.user-indicator{
+
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+    font-weight: 500;
+
+}
+
+.logout{
+    position: relative;
+    left: 20px;
+}
+
+.logout-form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.err-msg{
+    font-family: "Poppins", sans-serif;
+    color: rgb(233, 146, 146);
+    font-size: 17;
+    font-weight: 500;
+}
+
+
+
+.interface-box{
+    margin: auto;
+    position: relative;
+
+
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+
+    background-color: rgba(9, 10, 15, 0.8);
+    border-radius: 10px;
+    margin-top: 80px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+
+}
+
+.flex-wrapper{
+    margin: auto;
+    position: relative;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 1;
+    width: 100%;
+    margin-top: 40px;
+    height: fit-content;
+
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+.pacemaker-action-buttons{
+    position: relative;
+    margin:auto;
+    width: fit-content;
+
+}
+
+.pacemaker-action-buttons-wrapper{
+    display: inline-flex;
+}
+
+.pacemaker-setting{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+    font-weight: 400;
+    width: 100%;
+
+}
+
+.pacemaker-setting-wrapper{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+    font-weight: 400;
+    width: 100%;
+    
+
+}
+
+
+
+
+.pacemaker-settings-title{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 20;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 20px;
+
+}
+
+
+
+.pacemaker-curr-wrapper{
+
+    position: relative;
+    margin: auto;
+
+
+    background-color: rgba(113 119 144 / 38%);
+
+    width: 500px;
+    height: 440px;
+
+    border-radius: 10px;
+
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+    overflow-y: hidden;
+
+}
+
+
+.pacemaker-setting-wrapper{
+
+
+    width: 100%;
+
+
+    height: 380px;
+    padding-left: 30px;
+
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+    overflow-y: scroll;
+}
+
+
+.terminal{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: rgba(113 119 144 / 38%);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+    overflow-y: scroll;
+}
+
+.refresh-pacemaker-params{
+    position: static;
+    width: fit-content;
+    margin: auto;
+}
+
+.pacemaker-scroll-warpper{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+.pacemaker-input-wrapper{
+    padding: 10px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+
+.current-mode{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 17;
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.current-mode-div{
+
+    margin-top: 20px;
+}
+
+.refresh-pacemaker-params{
+    position: static;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.update-pacemaker-params{
+    position: relative;
+    top: -20px;
+    margin-bottom: 30px;
+    width: fit-content;
+    margin: auto;
+
+}
+
+
+
+.pacemaker-mode-wrapper{
+
+    position: relative;
+    margin: auto;
+
+
+    background-color: rgba(113 119 144 / 38%);
+
+    width: 250px;
+    height: 440px;
+
+    border-radius: 10px;
+
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+
+    overflow-y: hidden;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.pacemaker-setting-p{
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(146, 151, 179, 0.514);}
+
+
+
+.pacemaker-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(197, 185, 185);
+    opacity: 1; /* Firefox */
+}
+
+

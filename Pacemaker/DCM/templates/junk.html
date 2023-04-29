@@ -1,0 +1,57 @@
+<form autocomplete="off" action="/save" method="POST" >
+                <!--forms-->
+                <div class="current-mode-div">
+                  <p class="current-mode">Programming Mode: {{ pacingMode }}</p>
+                </div>
+
+                <p style="color:white"> Pacing Mode:  
+
+
+
+                  <select name = "pacingmode">
+                      <option value = "AOO">AOO</option>
+                      <option value = "AAI">AAI</option>
+                      <option value = "VOO">VOO</option>
+                      <option value = "VVI">VVI</option>
+                      <option value = "DOO">DOO</option>
+                      <option value = "DOOR">DOOR</option>
+                      <option value = "AOOR">AOOR</option>
+                      <option value = "VOOR">VOOR</option>
+                      <option value = "AAIR">AAIR</option>
+                      <option value = "VVIR">VVIR</option>
+                      <option value = "DDD">DDD</option>
+                  </select>
+                </p>
+
+
+                
+                <div class="pacemaker-input-prompt">
+                  <p class="pacemaker-input-prompt">Upper Rate Limit (ppm):</p> 
+                  <input class="user-input pacemaker-input" autocomplete="off" type = "number" name = "upper_rate">
+                </div>
+  
+                <div class="pacemaker-input-prompt">
+                  <p class="pacemaker-input-prompt">Lower Rate Limit (ppm):</p> 
+                  <input class="user-input pacemaker-input" autocomplete="off" type = "number" name = "low_rate">
+                </div>
+  
+                <div class="pacemaker-input-prompt">
+                  <p class="pacemaker-input-prompt">Amplitude (V):</p> 
+                  <input class="user-input pacemaker-input" autocomplete="off" type = "number" name = "amplitude">
+                </div>
+  
+  
+                <div class="pacemaker-input-prompt">
+                  <p class="pacemaker-input-prompt">Pulse Width:</p> 
+                  <input class="user-input pacemaker-input" autocomplete="off" type = "number" name = "pulse_width">
+                </div>
+  
+                <div class="pacemaker-input-prompt">
+                  <p class="pacemaker-input-prompt">Pulse Width:</p> 
+                  <input class="user-input pacemaker-input" autocomplete="off" type = "number" name = "pulse_width">
+                </div>
+  
+                <div class="save-inputs">
+                  <input class="index"  type = "submit" value = "Save Inputs"></input>
+                </div>
+</form>
